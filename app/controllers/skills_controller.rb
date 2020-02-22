@@ -26,6 +26,6 @@ class SkillsController < ApplicationController
   def set_skill; end
 
   def skill_params
-    params.require(:skill).permit(:description, :action_id, :hero_id)
+    params.require(:skill).permit(:description, :role_id, :hero_id)
   end
 end
